@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(192, 198, 204);
+}
+
+.card{
+    margin-top: 5vh
+}
+.titulo-pergunta{
+    margin-bottom: 20px;
+}
+.btn{
+    margin-top: 10px;
+    margin-left: 1rem;
+}
+.logo-img{
+   margin-left: 1vw;
+   height: 50px;
+}
+.btn-pergunta{
+    margin-bottom: 15px;
+   
+}
+h2{
+    margin-left: 1em;
+}
+.btn-resposta{
+    margin-left: 0;
+    margin-top: 15px;
+}
+.par-resposta{
+    margin-left: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding-top: 0px;
+    margin-top: 10px;
+}
+
+.card-resposta{
+    display:contents;
+}

@@ -1,0 +1,32 @@
+<%- include('partials/header.ejs') %>
+<!--* importando o partials header -->
+<body>
+  <%- include('partials/navbar.ejs') %>
+  <!-- * importando o partials navbar -->
+
+  <div class="container">
+    
+    <hr>
+    <h1> Fazer pergunta:  <a href="/perguntar" class="btn btn-primary btn-pergunta">Perguntar</a> </h1>
+    
+    <hr>
+    <h2>Perguntas</h2>
+    <hr>
+    <!-- * criando um for each para pecorrrer o array de perguntas -->
+    <% perguntas.forEach(pergunta =>{ %>
+
+    <div class="card">
+      <div class="cardbody">
+        <h2><%= pergunta.titulo %></h2>
+      </div>
+
+      <div class="card-footer">
+        <a href="/pergunta/<%= pergunta.id %>"><button class="btn btn-primary">Responder</button></a>
+      </div>
+    </div>
+
+    <% }) %>
+  </div>
+</body>
+
+<%- include('partials/footer.ejs') %><!-- * importando o partilals footer -->
